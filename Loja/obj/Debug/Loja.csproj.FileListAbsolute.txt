@@ -1,0 +1,8 @@
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\bin\Debug\Loja.dll.config
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\bin\Debug\Loja.dll
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\bin\Debug\Loja.pdb
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\bin\Debug\EntityFramework.dll
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\bin\Debug\EntityFramework.xml
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\obj\Debug\Loja.csprojResolveAssemblyReference.cache
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\obj\Debug\Loja.dll
+c:\users\aldo\documents\visual studio 2013\Projects\estudo\Loja\Loja\Loja\obj\Debug\Loja.pdb

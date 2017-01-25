@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<div ng-controller="produtosController">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Produto</th>
+                <th>
+                    Descrição
+                </th>
+                <th>Categoria</th>
+                <th>Preço</th>
+                <th>
+                    Menu
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="p in produtos">
+                <td>
+                    {{p.ProdutoId}}
+                </td>
+                <td>
+                    {{p.Nome}}
+                </td>
+                <td>
+                    {{p.Descricao}}
+                </td>
+                <td>
+                    {{p.Categoria}}
+                </td>
+                <td>
+                    {{p.Preco}}
+                </td>
+                <td>
+                    <span style="cursor:pointer;font-size:20pt;color:blue" class="glyphicon glyphicon-pencil" data-toggle="modal" data-target="#myModal" aria-hidden="true" ng-click="editar(p)"></span>
+                    <span style="cursor: pointer; font-size: 20pt; color: blue" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <style>
+        .lbltit {
+            width: 150px;
+            font-weight: bolder;
+            display: inline-table;
+        }
+
+        .divline {
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="divline">
+                        <div class="lbltit">Produto: </div>    <input type="text" ng-model="produto.Nome" name="name" value=" " />
+                    </div>
+                    <div class="divline">
+                        <div class="lbltit">Descrição: </div>    <input type="text" ng-model="produto.Descricao" name="name" value=" " />
+                    </div>
+                    <div class="divline">
+                        <div class="lbltit">Categoria: </div>    <input type="text" ng-model="produto.Categoria" name="name" value=" " />
+                    </div>
+                    <div class="divline">
+                        <div class="lbltit">Preço: </div>    <input type="text" ng-model="produto.Preco" name="name" value=" " />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" ng-click="atualizar(produto)">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

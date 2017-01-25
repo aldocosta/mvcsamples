@@ -1,0 +1,52 @@
+﻿@model Loja.UI.Models.ProdutoViewModel
+
+@{
+    ViewBag.Title = "Deletar";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h2>Deletar</h2>
+
+<fieldset>
+    <legend>ProdutoViewModel</legend>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.ProdutoId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProdutoId)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Descricao)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Descricao)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Preco)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Preco)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Categoria)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Categoria)
+    </div>
+    @Html.ActionLink("Deseja realmente deletar?", "DeletarRegistro", new { id = Model.ProdutoId })
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
